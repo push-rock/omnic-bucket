@@ -1,0 +1,23 @@
+{
+    "version": "0.3.3",
+    "description": "Content-aware compression CLI: classifies every file and routes it to the best codec (xz, zstd, brotli, ...) automatically",
+    "homepage": "https://github.com/push-rock/omnic",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/push-rock/omnic/releases/download/v0.3.3/omnic-v0.3.3-windows-latest.zip",
+            "hash": "00bbadc41d6056ab002a601a77f3d382b85ef4879aa6b6e5b381607dcec6899c",
+            "bin": "bin/omnic.exe"
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/push-rock/omnic"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/push-rock/omnic/releases/download/v$version/omnic-v$version-windows-latest.zip"
+            }
+        }
+    }
+}
